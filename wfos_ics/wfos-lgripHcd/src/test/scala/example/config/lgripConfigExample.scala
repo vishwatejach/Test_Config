@@ -10,7 +10,7 @@ import csw.location.client.scaladsl.HttpLocationServiceFactory
 import csw.config.client.scaladsl.ConfigClientFactory
 import org.scalatest.funsuite.AnyFunSuiteLike
 
-class ConfigClientExample(locationService: LocationService) extends AnyFunSuiteLike {
+class LgripConfigExample(locationService: LocationService) extends AnyFunSuiteLike {
 
   // Initialize config client API and admin API
   val clientApi = ConfigClientFactory.clientApi(actorSystem, locationService)
