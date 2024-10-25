@@ -21,7 +21,8 @@ class LgripConfigExample(locationService: LocationService) extends AnyFunSuiteLi
 
   // Create a file in the config service
   def createFileExample(): ConfigId = {
-    val filePath = Paths.get("/example/path/sample.conf")
+    val filePath = Paths.get("/wfos_ics/wfos-lgripHcd/src/test/scala/example/config
+/lgripConfigExample.scala")
     val configId = Await.result(adminApi.create(filePath, defaultConfigData, annex = false, "Initial creation"), 5.seconds)
     configId
   }
